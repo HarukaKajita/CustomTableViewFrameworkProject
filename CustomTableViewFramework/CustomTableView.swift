@@ -98,4 +98,44 @@ extension CustomTableView{
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return customTableViewDelegate.customTableView(tableView, heightForHeaderInSection: section)
     }
+    
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        return customTableViewDelegate.customSectionIndexTitles(for:tableView)
+    }
+    
+    func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+        return customTableViewDelegate.customTableView(_: tableView,sectionForSectionIndexTitle: title,at: index)
+    }
+    
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return customTableViewDelegate.customTableView(_:tableView, titleForFooterInSection:section)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+        customTableViewDelegate.customTableView(tableView, commit: editingStyle, forRowAt: indexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return customTableViewDelegate.customTableView(_: tableView, canEditRowAt: indexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return customTableViewDelegate.customTableView(_: tableView, canMoveRowAt: indexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath){
+        customTableViewDelegate.customTableView(tableView, moveRowAt: sourceIndexPath, to: destinationIndexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat{
+        return customTableViewDelegate.customTableView(_: tableView, estimatedHeightForRowAt: indexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, indentationLevelForRowAt indexPath: IndexPath) -> Int {
+        return customTableViewDelegate.customTableView(_: tableView, indentationLevelForRowAt: indexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        customTableViewDelegate.customTableView(tableView, willDisplay: cell, forRowAt: indexPath)
+    }
 }
