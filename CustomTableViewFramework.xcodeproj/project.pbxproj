@@ -460,7 +460,7 @@
 				61E76633209E4CE8005518AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		61E76634209E4CE8005518AA /* Build configuration list for PBXNativeTarget "CustomTableViewFramework" */ = {
 			isa = XCConfigurationList;
@@ -469,7 +469,7 @@
 				61E76636209E4CE8005518AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		61E76637209E4CE8005518AA /* Build configuration list for PBXNativeTarget "CustomTableViewFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -478,7 +478,7 @@
 				61E76639209E4CE8005518AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
