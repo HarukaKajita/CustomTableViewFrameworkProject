@@ -1,0 +1,11 @@
+framework module CustomTableViewFramework {
+  umbrella header "CustomTableViewFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module CustomTableViewFramework.Swift {
+    header "CustomTableViewFramework-Swift.h"
+    requires objc
+}
